@@ -15,11 +15,11 @@ Finally we will convert our training data and output to numpy arrays.
 Now that we have setup our model its time to train it on our data! To do these we will fit our data to the model. The number of epochs we set is the amount of times that the model will see the same information while training.
 
 # Making Predictions
-Now its time to actually use the model! Ideally we want to generate a response to any sentence the user types in. To do this we need to remember that our model does not take string input, it takes a bag of words. We also need to realize that our model does not spit out sentences, it generates a list of probabilities for all of our classes. This makes the process to generate a response look like the following:
-– Get some input from the user
-– Convert it to a bag of words
-– Get a prediction from the model
-– Find the most probable class
-– Pick a response from that class
+Now its time to actually use the model! Ideally we want to generate a response to any sentence the user types in. To do this we need to remember that our model does not take string input, it takes a bag of words. We also need to realize that our model does not spit out sentences, it generates a list of probabilities for all of our classes. This makes the process to generate a response look like the following:<br />
+– Get some input from the user<br />
+– Convert it to a bag of words<br />
+– Get a prediction from the model<br />
+– Find the most probable class<br />
+– Pick a response from that class<br />
 
 The bag_of_words function will transform our string input to a bag of words using our created words list. The chat function will handle getting a prediction from the model and grabbing an appropriate response from our JSON file of responses.
